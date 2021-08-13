@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "description": ""
-  "engines": {
+  "engines" {
    "node": "16.x",
    "npm": "7.x"
 }
