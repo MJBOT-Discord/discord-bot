@@ -1,11 +1,14 @@
-const Discord = require('discord.js');
+const {Client, Intents} = require('discord.js')
  
-const client = new Discord.Client();
- 
+const client = new Client({ intents: [
+    Intents.FLAGS.GUILDS, 
+    Intents.FLAGS.GUILD_MESSAGES,
+    ] });
+
 client.once('ready', () => {
-   console.log('Ready!');
-   client.user.setActivity('?help').catch(console.error)
-});
+        console.log('Ready!');
+        client.user.setActivity('?help');
+     });
  
  
  
