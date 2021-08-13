@@ -441,5 +441,5 @@ client.on('message', (message) => {
  
  
  
-client.login('ODA0MDQxMDQwMDI5OTQxNzYw.YBGjkg.bgIv1fUNoVPCeQ9iw2dfe72cWrY');
+client.login(process.env.TOKEN);
 
